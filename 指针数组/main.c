@@ -17,6 +17,13 @@ int main() {
 	int arr2[] = { 2,3,4,5,6 };
 	int arr3[] = { 3,4,5,6,7 };
 	int* arrs[] = { arr1,arr2,arr3 };//保存的都是首元素的地址
-	
+	for (i = 0; i < 3; i++) {
+		arrs[i];//首元素的地址
+		int j = 0;
+		for (j = 0; j < 5; j++) {
+			printf("%d ", *(arrs[i] + j));//一般通常的用法
+		}
+		printf("\n");
+	}
 	return 0;
 }
